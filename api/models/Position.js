@@ -21,17 +21,13 @@ module.exports = {
   		type: 'integer',
   		default:0
   	},
-  	lines: {
-  		collection: 'cellLine',
-  		via: 'positions'
-  	},
     records: {
       collection: 'cellLineRecord',
       via: 'positions'
     },
   	active: {
   		type: 'boolean',
-  		default: true
+  		defaultsTo: true
   	}
   }
 };

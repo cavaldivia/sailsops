@@ -13,38 +13,21 @@ module.exports = {
   		required: true,
   		unique: true
   	},
-  	users: {
-  		model: 'user'
-  	},
-  	positions: {
-  		model: 'position'
-  	},
-  	units: {
-  		model: 'unit'
-  	},
   	phone: {
   		collecion: 'cellPhone',
   		via: 'phoneLine'
-  	},
-  	simcard: {
-  		collection: 'cellPhone',
-  		via: 'simcardLine'
-  	},
-  	minutes: {
-  		type: 'integer',
-  		default: 0
-  	},
-  	dataplan: {
-  		type: 'integer',
-  		default: 0
   	},
   	records: {
   		collection: 'cellLineRecord',
   		via: 'line'
   	},
+    phones: {
+        collection: 'CellLinePhone',
+        via: 'line'
+    },
   	active: {
   		type: 'boolean',
-  		default: true
+  		defaultsTo: true
   	}
   }
 };

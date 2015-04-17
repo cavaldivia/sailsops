@@ -22,15 +22,15 @@ module.exports = {
   	},
   	minutes: {
   		type: 'integer',
-  		default: 0
+  		defaultsTo: 0
   	},
   	dataplan: {
   		type: 'integer',
-  		default: 0
+  		defaultsTo: 0
   	},
   	active: {
   		type: 'boolean',
-  		default: true
+  		defaultsTo: true
   	}
   }
 };

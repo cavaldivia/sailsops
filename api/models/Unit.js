@@ -15,27 +15,23 @@ module.exports = {
   	},
   	idMP: {
   		type: 'integer',
-  		default: 0
+  		defaultsTo: 0
   	},
   	idSIGFE: {
   		type: 'integer',
-  		default: 0
+  		defaultsTo: 0
   	},
     account: {
       collection: 'cellAccount',
       via: 'units'
     },
-  	lines: {
-  		collection: 'cellLine',
-  		via: 'units'
-  	},
     records: {
       collection: 'cellLineRecord',
       via: 'units'
     },
   	active: {
   		type: 'boolean',
-  		default: true
+  		defaultsTo: true
   	}
   }
 };

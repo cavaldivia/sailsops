@@ -14,8 +14,15 @@ module.exports = {
   		required: true
   	},
   	phoneModel: {
-  		model: 'cellPhoneModel'
+        mode: 'CellPhoneModel'
   	},
+    startDate: {
+        type: 'date'
+    },
+    endDate: {
+        type: 'date'
+    },
+
   	ocNumber: {
   		type: 'string'
   	},
@@ -23,14 +30,19 @@ module.exports = {
   		type: 'integer'
   	},
   	phoneLine: {
-  		model: 'cellLine'
+  		collection: 'cellLinePhone',
+        via: 'phone'
   	},
-  	simcardLine: {
-  		model: 'cellLine'
-  	},
+    disposalDocument: {
+        type: 'string'
+    },
+    status: {
+       type: 'string' ,
+       enum: ['activo', 'baja con enajenacion', 'baja sin enajenacion']
+    },
   	active: {
   		type: 'boolean',
-  		default: true
+  		defaultsTo: true
   	}
   }
 };

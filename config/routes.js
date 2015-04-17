@@ -33,8 +33,11 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'homepage'
-  }
+    
+        view: 'home/index'
+  },
+  'GET /user/:id?': 'UserController.find',
+  'POST /user': 'UserController.create'
 
   /***************************************************************************
   *                                                                          *

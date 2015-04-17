@@ -24,13 +24,17 @@ module.exports = {
   		type: 'boolean',
   		defaultsTo: false
   	},
+    phonetype: {
+        type: 'string',
+        enum: ['costo cero', 'BAM', 'NetBook','Ip','Android']
+    },
   	phones: {
   		collection: 'cellPhone',
   		via: 'phoneModel'
   	},
   	active: {
   		type: 'boolean',
-  		default: true
+  		defaultsTo: true
   	}
   }
 };

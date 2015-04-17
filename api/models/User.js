@@ -26,17 +26,13 @@ module.exports = {
   		unique: true,
   		required: true
   	},
-  	lines: {
-  		collection: 'cellLine',
-  		via: 'users'
-  	},
     records: {
       collection: 'cellLineRecord',
       via: 'users'
     },
   	active: {
   		type: 'boolean',
-  		default: true
+  		defaultsTo: true
   	}
   }
 };
