@@ -26,6 +26,10 @@ module.exports = {
   		unique: true,
   		required: true
   	},
+    requests: {
+        collection: 'request',
+        via: 'requester'
+    },
     records: {
       collection: 'cellLineRecord',
       via: 'users'

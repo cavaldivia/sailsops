@@ -13,10 +13,6 @@ module.exports = {
   		required: true,
   		unique: true
   	},
-  	phone: {
-  		collecion: 'cellPhone',
-  		via: 'phoneLine'
-  	},
   	records: {
   		collection: 'cellLineRecord',
   		via: 'line'

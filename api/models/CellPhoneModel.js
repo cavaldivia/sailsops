@@ -26,7 +26,7 @@ module.exports = {
   	},
     phonetype: {
         type: 'string',
-        enum: ['costo cero', 'BAM', 'NetBook','Ip','Android']
+        enum: ['costo cero', 'BAM', 'NetBook','Ip','Android','Simcard']
     },
   	phones: {
   		collection: 'cellPhone',

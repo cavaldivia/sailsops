@@ -8,6 +8,9 @@
 module.exports = {
 
   attributes: {
+    requests: {
+         model: 'request'
+    },
   	line: {
   		model: 'cellLine'
   	},

@@ -14,8 +14,11 @@ module.exports = {
   		required: true
   	},
   	phoneModel: {
-        mode: 'CellPhoneModel'
+        model: 'CellPhoneModel'
   	},
+    requests: {
+        model: 'request'
+    },
     startDate: {
         type: 'date'
     },

@@ -15,11 +15,11 @@ module.exports = {
   	},
   	minutes: {
   		type: 'integer',
-  		default: true
+  		defaultsTo: true
   	},
   	dataplan: {
   		type: 'integer',
-  		default:0
+  		defaultsTo:0
   	},
     records: {
       collection: 'cellLineRecord',
