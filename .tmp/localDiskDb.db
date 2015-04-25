@@ -1,0 +1,740 @@
+{
+  "data": {
+    "cellline_phone__cellphone_phoneline": [],
+    "cellphonetype": [],
+    "task": [
+      {
+        "name": "Recepción de Antecedentes",
+        "active": true,
+        "id": 1,
+        "createdAt": "2015-04-16T19:03:57.843Z",
+        "updatedAt": "2015-04-16T19:06:58.149Z",
+        "description": "Se requiere completar todos los antecedentes para solicitud de línea"
+      }
+    ],
+    "taskinstance": [],
+    "wflow": [
+      {
+        "name": "Nueva Línea",
+        "version": "1",
+        "description": "Solicitud de Creación de una nueva línea",
+        "active": true,
+        "id": 1,
+        "createdAt": "2015-04-16T19:01:33.851Z",
+        "updatedAt": "2015-04-16T19:03:18.739Z"
+      },
+      {
+        "active": true,
+        "id": 2,
+        "createdAt": "2015-04-16T19:02:28.353Z",
+        "updatedAt": "2015-04-16T19:02:28.353Z"
+      }
+    ],
+    "wflowinstance": [],
+    "wflowtask": [],
+    "cellaccount": [],
+    "cellline": [],
+    "celllinephone": [],
+    "celllinerecord": [],
+    "cellphone": [],
+    "cellphonebrand": [
+      {
+        "name": "Apple",
+        "active": true,
+        "id": 1,
+        "createdAt": "2015-04-17T18:11:22.595Z",
+        "updatedAt": "2015-04-17T18:11:22.595Z"
+      },
+      {
+        "name": "Samsung",
+        "active": true,
+        "id": 2,
+        "createdAt": "2015-04-17T18:11:29.877Z",
+        "updatedAt": "2015-04-17T18:11:29.877Z"
+      },
+      {
+        "name": "Nokia",
+        "active": true,
+        "id": 3,
+        "createdAt": "2015-04-17T18:12:01.860Z",
+        "updatedAt": "2015-04-17T18:12:01.860Z"
+      },
+      {
+        "name": "Motorola",
+        "active": true,
+        "id": 4,
+        "createdAt": "2015-04-17T18:12:06.547Z",
+        "updatedAt": "2015-04-17T18:12:06.547Z"
+      },
+      {
+        "name": "LG",
+        "active": true,
+        "id": 5,
+        "createdAt": "2015-04-17T18:12:15.078Z",
+        "updatedAt": "2015-04-17T18:12:15.078Z"
+      },
+      {
+        "name": "Huawei",
+        "active": true,
+        "id": 6,
+        "createdAt": "2015-04-17T18:13:00.748Z",
+        "updatedAt": "2015-04-17T18:13:00.748Z"
+      },
+      {
+        "name": "Entel",
+        "active": true,
+        "id": 7,
+        "createdAt": "2015-04-17T18:13:05.391Z",
+        "updatedAt": "2015-04-17T18:13:05.391Z"
+      },
+      {
+        "name": "BlackBerry",
+        "active": true,
+        "id": 8,
+        "createdAt": "2015-04-17T18:13:35.058Z",
+        "updatedAt": "2015-04-17T18:13:35.058Z"
+      }
+    ],
+    "cellphonemodel": [],
+    "position": [],
+    "unit": [],
+    "user": [
+      {
+        "first_name": "carlos",
+        "last_name": "valdivia",
+        "rut": 132796327,
+        "email": "carlos.valdivia@sag.gob.cl",
+        "id": 1,
+        "createdAt": "2015-04-15T14:17:06.352Z",
+        "updatedAt": "2015-04-15T14:17:06.352Z"
+      },
+      {
+        "first_name": "eduardo",
+        "last_name": "vera",
+        "rut": 13309365,
+        "email": "eduardo.vera@sag.gob.cl",
+        "id": 2,
+        "createdAt": "2015-04-15T14:18:04.740Z",
+        "updatedAt": "2015-04-15T14:18:04.740Z"
+      },
+      {
+        "first_name": "nicolas",
+        "last_name": "guerra",
+        "rut": 15770591,
+        "email": "nicolas.guerra@sag.gob.cl",
+        "id": 3,
+        "createdAt": "2015-04-15T17:06:05.504Z",
+        "updatedAt": "2015-04-15T17:06:05.504Z"
+      },
+      {
+        "first_name": "luis",
+        "last_name": "alcazar",
+        "rut": 9381495,
+        "email": "luis.alcazar@sag.gob.cl",
+        "id": 4,
+        "createdAt": "2015-04-15T18:16:17.066Z",
+        "updatedAt": "2015-04-15T18:16:17.066Z"
+      },
+      {
+        "first_name": "patricio",
+        "last_name": "cardenas",
+        "rut": 9154196,
+        "email": "patricio.cardenas@sag.gob.cl",
+        "active": true,
+        "id": 5,
+        "createdAt": "2015-04-17T17:59:46.712Z",
+        "updatedAt": "2015-04-17T17:59:46.712Z"
+      },
+      {
+        "first_name": "sara",
+        "last_name": "azabache",
+        "rut": 9408899,
+        "email": "sara.azabache@sag.gob.cl",
+        "active": true,
+        "id": 6,
+        "createdAt": "2015-04-17T18:09:16.664Z",
+        "updatedAt": "2015-04-17T18:09:16.664Z"
+      }
+    ],
+    "cellphone_phonemodel__cellphonemodel_phones": []
+  },
+  "schema": {
+    "cellline_phone__cellphone_phoneline": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "cellphone_phoneLine": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "cellphone",
+        "on": "id",
+        "via": "cellline_phone"
+      },
+      "cellline_phone": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "cellline",
+        "on": "id",
+        "via": "cellphone_phoneLine"
+      }
+    },
+    "cellphonetype": {
+      "name": {
+        "type": "string",
+        "unique": true
+      },
+      "active": {
+        "type": "boolean"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "task": {
+      "name": {
+        "type": "string",
+        "unique": true
+      },
+      "description": {
+        "type": "string"
+      },
+      "active": {
+        "type": "boolean",
+        "defaultsTo": true
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "taskinstance": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "wflow": {
+      "name": {
+        "type": "string"
+      },
+      "version": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "active": {
+        "type": "boolean",
+        "defaultsTo": true
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "wflowinstance": {
+      "wflow": {
+        "type": "integer",
+        "model": "wflow",
+        "foreignKey": true,
+        "alias": "wflow"
+      },
+      "tasks": {
+        "type": "integer",
+        "model": "task",
+        "foreignKey": true,
+        "alias": "tasks"
+      },
+      "sequence": {
+        "type": "integer",
+        "defaultsTo": 0
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "pending",
+          "done",
+          "rejected"
+        ],
+        "defaultsTo": "pending"
+      },
+      "obs": {
+        "type": "string"
+      },
+      "active": {
+        "type": "boolean",
+        "defaultsTo": true
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "wflowtask": {
+      "wflow": {
+        "type": "integer",
+        "model": "wflow",
+        "foreignKey": true,
+        "alias": "wflow"
+      },
+      "tasks": {
+        "type": "integer",
+        "model": "task",
+        "foreignKey": true,
+        "alias": "tasks"
+      },
+      "sequence": {
+        "type": "integer",
+        "defaultsTo": 0
+      },
+      "active": {
+        "type": "string",
+        "defaultsTo": "true"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "cellaccount": {
+      "code": {
+        "type": "string",
+        "unique": true
+      },
+      "units": {
+        "type": "integer",
+        "model": "unit",
+        "foreignKey": true,
+        "alias": "units"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "cellline": {
+      "number": {
+        "type": "integer",
+        "unique": true
+      },
+      "active": {
+        "type": "boolean",
+        "defaultsTo": true
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "celllinephone": {
+      "line": {
+        "type": "integer",
+        "model": "cellline",
+        "foreignKey": true,
+        "alias": "line"
+      },
+      "phone": {
+        "type": "integer",
+        "model": "cellphone",
+        "foreignKey": true,
+        "alias": "phone"
+      },
+      "deliverDoc": {
+        "type": "string"
+      },
+      "receiveDate": {
+        "type": "date"
+      },
+      "receiveDoc": {
+        "type": "string"
+      },
+      "active": {
+        "type": "boolean",
+        "defaultsTo": true
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "celllinerecord": {
+      "line": {
+        "type": "integer",
+        "model": "cellline",
+        "foreignKey": true,
+        "alias": "line"
+      },
+      "users": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "users"
+      },
+      "positions": {
+        "type": "integer",
+        "model": "position",
+        "foreignKey": true,
+        "alias": "positions"
+      },
+      "units": {
+        "type": "integer",
+        "model": "unit",
+        "foreignKey": true,
+        "alias": "units"
+      },
+      "minutes": {
+        "type": "integer",
+        "defaultsTo": 0
+      },
+      "dataplan": {
+        "type": "integer",
+        "defaultsTo": 0
+      },
+      "active": {
+        "type": "boolean",
+        "defaultsTo": true
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "cellphone": {
+      "IMEI": {
+        "type": "string",
+        "unique": true
+      },
+      "startDate": {
+        "type": "date"
+      },
+      "endDate": {
+        "type": "date"
+      },
+      "ocNumber": {
+        "type": "string"
+      },
+      "invoiceNumber": {
+        "type": "integer"
+      },
+      "disposalDocument": {
+        "type": "string"
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "activo",
+          "baja con enajenacion",
+          "baja sin enajenacion"
+        ]
+      },
+      "active": {
+        "type": "boolean",
+        "defaultsTo": true
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "cellphonebrand": {
+      "name": {
+        "type": "string",
+        "unique": true
+      },
+      "active": {
+        "type": "boolean",
+        "defaultsTo": true
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "cellphonemodel": {
+      "name": {
+        "type": "string",
+        "unique": true
+      },
+      "brand": {
+        "type": "integer",
+        "model": "cellphonebrand",
+        "foreignKey": true,
+        "alias": "brand"
+      },
+      "can_call": {
+        "type": "boolean",
+        "defaultsTo": false
+      },
+      "can_dataplan": {
+        "type": "boolean",
+        "defaultsTo": false
+      },
+      "phonetype": {
+        "type": "string",
+        "enum": [
+          "costo cero",
+          "BAM",
+          "NetBook",
+          "Ip",
+          "Android"
+        ]
+      },
+      "active": {
+        "type": "boolean",
+        "defaultsTo": true
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "position": {
+      "name": {
+        "type": "string",
+        "unique": true
+      },
+      "minutes": {
+        "type": "integer"
+      },
+      "dataplan": {
+        "type": "integer"
+      },
+      "active": {
+        "type": "boolean",
+        "defaultsTo": true
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "unit": {
+      "name": {
+        "type": "string",
+        "unique": true
+      },
+      "idMP": {
+        "type": "integer",
+        "defaultsTo": 0
+      },
+      "idSIGFE": {
+        "type": "integer",
+        "defaultsTo": 0
+      },
+      "active": {
+        "type": "boolean",
+        "defaultsTo": true
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "user": {
+      "first_name": {
+        "type": "string"
+      },
+      "last_name": {
+        "type": "string"
+      },
+      "rut": {
+        "type": "integer",
+        "unique": true
+      },
+      "email": {
+        "type": "string",
+        "unique": true
+      },
+      "active": {
+        "type": "boolean",
+        "defaultsTo": true
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "cellphone_phonemodel__cellphonemodel_phones": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "cellphonemodel_phones": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "cellphonemodel",
+        "on": "id",
+        "via": "cellphone_phoneModel"
+      },
+      "cellphone_phoneModel": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "cellphone",
+        "on": "id",
+        "via": "cellphonemodel_phones"
+      }
+    }
+  },
+  "counters": {
+    "cellaccount": {},
+    "cellline": {},
+    "celllinerecord": {},
+    "cellphone": {},
+    "cellphonebrand": {
+      "id": 8
+    },
+    "cellphonemodel": {},
+    "position": {},
+    "unit": {},
+    "user": {
+      "id": 6
+    },
+    "cellphonetype": {},
+    "cellline_phone__cellphone_phoneline": {},
+    "celllinephone": {},
+    "task": {
+      "id": 1
+    },
+    "taskinstance": {},
+    "wflow": {
+      "id": 2
+    },
+    "wflowinstance": {},
+    "wflowtask": {},
+    "cellphone_phonemodel__cellphonemodel_phones": {}
+  }
+}
