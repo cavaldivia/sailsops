@@ -21,9 +21,8 @@ module.exports = {
   		type: 'integer',
   		defaultsTo: 0
   	},
-    account: {
-      collection: 'cellAccount',
-      via: 'units'
+    address : {
+        type: 'string'
     },
     records: {
       collection: 'cellLineRecord',

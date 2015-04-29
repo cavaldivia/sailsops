@@ -8,16 +8,16 @@
 module.exports = {
 
   attributes: {
-    name: {
-        type: 'string',
-        unique: true,
-        required: true
-    },
+  	name: {
+  		type: 'string',
+  		unique: true,
+  		required: true
+  	},
     requests: {
         collection: 'request',
         via: 'type'
     },
-    active: {
+    active :{
         type: 'boolean',
         defaultsTo: true
     }

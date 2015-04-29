@@ -11,7 +11,6 @@ module.exports = {
   	IMEI: {
   		type: 'string',
   		unique: true,
-  		required: true
   	},
   	phoneModel: {
         model: 'CellPhoneModel'
@@ -25,7 +24,10 @@ module.exports = {
     endDate: {
         type: 'date'
     },
-
+    cost: {
+       type: 'integer',
+       defaultsTo: 0
+    },
   	ocNumber: {
   		type: 'string'
   	},
@@ -36,13 +38,6 @@ module.exports = {
   		collection: 'cellLinePhone',
         via: 'phone'
   	},
-    disposalDocument: {
-        type: 'string'
-    },
-    status: {
-       type: 'string' ,
-       enum: ['activo', 'baja con enajenacion', 'baja sin enajenacion']
-    },
   	active: {
   		type: 'boolean',
   		defaultsTo: true

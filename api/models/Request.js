@@ -20,9 +20,6 @@ module.exports = {
       endDate: {
           type: 'date'
       },
-      state : {
-          enum: ['Requerimiento Recibido','Solicitado a Entel','Recibo de Entel','Entregado/Enviado a Usuario/a','Completado','Rechazado']
-      },
       records: {
           collection: 'cellLineRecord',
           via: 'requests'
@@ -30,6 +27,9 @@ module.exports = {
       phones: {
           collection: 'cellPhone',
           via: 'requests'
+      },
+      status: {
+          type: 'integer'
       },
       obs: {
           type: 'string'

@@ -21,6 +21,10 @@ module.exports = {
   		type: 'integer',
   		defaultsTo:0
   	},
+    politic: {
+        type: 'boolean',
+        defaultsTo: false
+    },
     records: {
       collection: 'cellLineRecord',
       via: 'positions'

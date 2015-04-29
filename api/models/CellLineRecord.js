@@ -23,6 +23,9 @@ module.exports = {
   	units: {
   		model: 'unit'
   	},
+    account: {
+        model: 'cellAccount'
+    },
   	minutes: {
   		type: 'integer',
   		defaultsTo: 0

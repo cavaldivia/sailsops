@@ -13,9 +13,20 @@ module.exports = {
   		required: true,
   		unique: true
   	},
-  	units:{
-  		model: 'Unit'
-  	}
+    record: {
+        collection: 'cellLineRecord',
+        via: 'account'
+    },
+    name: {
+        type: 'string'
+    },
+    region: {
+        type:'string'
+    },
+    active : {
+        type: 'boolean',
+        defaultsTo: true
+    }
   }
 };
 

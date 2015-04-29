@@ -28,6 +28,10 @@ module.exports = {
         type: 'string',
         enum: ['costo cero', 'BAM', 'NetBook','Ip','Android','Simcard']
     },
+    net_cost: {
+        type: 'integer',
+        defaultsTo: 0
+    },
   	phones: {
   		collection: 'cellPhone',
   		via: 'phoneModel'
