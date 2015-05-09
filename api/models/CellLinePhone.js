@@ -14,15 +14,6 @@ module.exports = {
     phone: {
         model: 'CellPhone'
     },
-    deliverDoc: {
-        type: 'string'
-    },
-    receiveDate: {
-        type: 'date'
-    },
-    receiveDoc: {
-        type: 'string'
-    },
     active: {
         type: 'boolean',
         defaultsTo: true

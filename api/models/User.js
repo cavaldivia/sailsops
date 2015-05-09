@@ -26,6 +26,9 @@ module.exports = {
   		unique: true,
   		required: true
   	},
+    gender: {
+        type: 'boolean'
+    },
     requests: {
         collection: 'request',
         via: 'requester'

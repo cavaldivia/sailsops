@@ -21,6 +21,9 @@ module.exports = {
         collection: 'CellLinePhone',
         via: 'line'
     },
+    docid: {
+        type: 'integer',
+    },
   	active: {
   		type: 'boolean',
   		defaultsTo: true

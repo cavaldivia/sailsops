@@ -42,9 +42,9 @@ module.exports.connections = {
   ***************************************************************************/
  MysqlServerCasino: {
     adapter: 'sails-mysql',
-    host: 'localhost',
-    user: 'celladmin',
-    password: 'operaciones2015',
+    host: '10.16.8.73',
+    user: 'carlos',
+    password: 'lazaro',
     database: 'sailsops'
   },
 

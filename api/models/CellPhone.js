@@ -35,9 +35,16 @@ module.exports = {
   		type: 'integer'
   	},
   	phoneLine: {
-  		collection: 'cellLinePhone',
+  		collection: 'CellLinePhone',
         via: 'phone'
   	},
+    record: {
+        collection: 'CellPhoneRecord',
+        via: 'phone'
+    },
+    docid: {
+        type: 'integer',
+    },
   	active: {
   		type: 'boolean',
   		defaultsTo: true

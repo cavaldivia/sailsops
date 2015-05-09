@@ -21,7 +21,7 @@ module.exports = {
   		type: 'integer',
   		defaultsTo:0
   	},
-    politic: {
+    requireAuth: {
         type: 'boolean',
         defaultsTo: false
     },

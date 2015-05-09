@@ -8,7 +8,19 @@
 module.exports = {
 
   attributes: {
-
+    phone : {
+        model: 'CellPhone'
+    },
+    docid: {
+        type: 'integer',
+    },
+    status : {
+        type: 'string'
+    },
+    active : {
+        type: 'boolean',
+        defaultsTo: true
+    }
   }
 };
 

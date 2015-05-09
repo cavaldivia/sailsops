@@ -17,12 +17,18 @@ module.exports = {
   	users: {
   		model: 'user'
   	},
+    job: {
+        type: 'string'
+    },
   	positions: {
   		model: 'position'
   	},
   	units: {
   		model: 'unit'
   	},
+    sagposition : {
+        type: 'string'
+    },
     account: {
         model: 'cellAccount'
     },
@@ -34,6 +40,9 @@ module.exports = {
   		type: 'integer',
   		defaultsTo: 0
   	},
+    docid: {
+        type: 'integer',
+    },
   	active: {
   		type: 'boolean',
   		defaultsTo: true
