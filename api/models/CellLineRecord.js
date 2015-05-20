@@ -43,6 +43,9 @@ module.exports = {
     docid: {
         type: 'integer',
     },
+    obs : {
+        type: 'string'
+    },
   	active: {
   		type: 'boolean',
   		defaultsTo: true

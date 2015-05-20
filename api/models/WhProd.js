@@ -1,5 +1,5 @@
 /**
-* Unit.js
+* WhProd.js
 *
 * @description :: TODO: You might write a short summary of how this model works and what it represents here.
 * @docs        :: http://sailsjs.org/#!documentation/models
@@ -10,29 +10,28 @@ module.exports = {
   attributes: {
   	name: {
   		type: 'string',
-  		required: true,
-  		unique: true
+  		unique: true,
+  		required: true
   	},
-  	idMP: {
+  	IdMP: {
   		type: 'integer',
   		defaultsTo: 0
   	},
-  	idSIGFE: {
-  		type: 'integer',
-  		defaultsTo: 0
-  	},
-    offices : {
-        collection: 'Office',
-        via: 'units'
+    material: {
+        model: 'WhMaterial'
     },
-    records: {
-      collection: 'cellLineRecord',
-      via: 'units'
+    book: {
+        collection: 'WhBook',
+        via: 'prods'
     },
-  	active: {
+    pack: {
+        collection: 'WhProdPacking',
+        via: 'prod'
+    },
+    active: {
   		type: 'boolean',
   		defaultsTo: true
-  	}
+  	}    
   }
 };
 
