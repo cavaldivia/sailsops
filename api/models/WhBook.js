@@ -20,6 +20,10 @@ module.exports = {
     prods: {
         model: 'WhProd'
     },
+    quotation: {
+        type: 'integer',
+        defaultsTo: 0
+    },    
     prodin: {
         type: 'integer',
         defaultsTo: 0

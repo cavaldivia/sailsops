@@ -29,6 +29,10 @@ module.exports = {
       collection: 'cellLineRecord',
       via: 'units'
     },
+    prodestrs: {
+      collection: 'ProdEstr',
+      via: 'units'
+    },
   	active: {
   		type: 'boolean',
   		defaultsTo: true

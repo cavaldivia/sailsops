@@ -40,7 +40,13 @@ module.exports = {
   	active: {
   		type: 'boolean',
   		defaultsTo: true
-  	}
+  	},
+    gtran: {
+  		type: 'string',
+  	},
+    region: {
+  		type: 'string',
+  	},
   }
 };
 
