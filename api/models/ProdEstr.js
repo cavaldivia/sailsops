@@ -17,6 +17,10 @@ module.exports = {
     subprods: {
         model: 'SubProd'
     },
+    linerecords: {
+        collection: 'CelllineRecord',
+        via: 'prodsestrs'
+    },
   	active: {
   		type: 'boolean',
   		defaultsTo: true

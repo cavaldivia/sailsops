@@ -32,6 +32,9 @@ module.exports = {
     account: {
         model: 'cellAccount'
     },
+    prodsestrs: {
+        model: 'ProdEstr'
+    },
   	minutes: {
   		type: 'integer',
   		defaultsTo: 0
